@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/* http://meyerweb.com/eric/tools/css/reset/ - v2.0 | 20110126 */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+*{box-sizing:border-box}
+
+/* HTML */
+html {height:100%;}
+body {height:100%; background:#F1D943;}
+
+/* dããããã */
+ul {width:380px; height:140px; position:absolute; top:50%; left:50%; margin:-120px 0 0 -190px;}
+li {position:absolute; width:140px; height:140px;}
+li:nth-child(2) {right:0;}
+
+p:before, p:after, b:after, li:nth-child(3):after {content:''; border-radius:300px; position:absolute;}
+
+p {background:#EE795A; width:140px; height:140px; border-radius:100px; position:absolute;}
+p:before {background:#473430; width:50px; height:50px; top:50%; left:50%; margin:-25px 0 0 -25px;}
+p:after {border:14px solid #FAEC4F; width:140px; height:140px; margin:-14px 0 0 -14px; z-index:1000; box-shadow:inset 0 6px 0 0 rgba(0,0,0,.02);}
+
+b:after {border:50px solid #F1D943; width:140px; height:140px; margin:-50px 0 0 -50px; z-index:999;}
+b {background:#F1D943; width:140px; height:70px; position:absolute; box-shadow:0 10px 0 0 rgba(0,0,0,.05); animation:down 10s cubic-bezier(0.360, 0.300, 0.290, 1.000) infinite;}
+
+@keyframes down {
+  0%, 50% {height:70px; box-shadow:0 10px 0 0 rgba(0,0,0,.05);}
+  75% {height:142px; box-shadow:0 0 0 0 rgba(0,0,0,.05);}
+}
+
+li:nth-child(3) {background:#473430; width:66px; height:66px; position:absolute; top:50%; left:50%; margin:80px 0 0 -33px; z-index:999; border-radius:50px;}
+li:nth-child(3):after {background:#EE795A; width:38px; height:38px; top:50%; left:50%; margin:-19px 0 0 -19px;}
+
+em {background:#F1D943; width:66px; height:33px; position:absolute; z-index:99999; box-shadow:0 4px 0 0 rgba(0,0,0,.1);}
